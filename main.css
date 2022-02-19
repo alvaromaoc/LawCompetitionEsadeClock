@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: radial-gradient(#fff9ef,#fff0d7);
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img {
+    margin: 0 20px;
+}
+
+.clock-ended {
+    background-color: rgba(255, 0, 0, 0.2);
+    border: solid 1px #7f1d1d;
+    color: #7f1d1d;
+}
+
+.clock-default {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: solid 1px black;
+}
+
+input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.custom-number-input input:focus {
+    outline: none !important;
+}
+
+.custom-number-input button:focus {
+    outline: none !important;
+}
