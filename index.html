@@ -214,7 +214,9 @@
                 clearInterval(interval);
             }
             totalSeconds = secondsMemory;
-            buttonStart.innerHTML = "Start countdown";
+            if (!firstTime) {
+                buttonStart.innerHTML = "Start countdown";
+            }
             setContent();
         }
 
